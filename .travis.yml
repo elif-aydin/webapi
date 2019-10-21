@@ -2,5 +2,3 @@ language: csharp
 solution: test.sln
 install:
   - nuget restore test.sln
-script:
-  - xbuild /p:Configuration=Release test.sln /p:TargetFrameworkVersion="v4.6"
