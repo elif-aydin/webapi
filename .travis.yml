@@ -1,2 +1,9 @@
 language: csharp
-solution: "./test.sln"
+solution: test.sln
+
+matrix:
+  include:
+    - dotnet: 2.1.502
+      mono: none
+      script:
+       - dotnet build test
