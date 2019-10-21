@@ -1,6 +1,6 @@
 language: csharp
 solution: test.sln
 install:
-  - nuget restore AbiokaApi.sln
+  - nuget restore test.sln
 script:
   - xbuild /p:Configuration=Release test.sln /p:TargetFrameworkVersion="v4.6"
