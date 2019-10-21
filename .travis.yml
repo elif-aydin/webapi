@@ -1,4 +1,4 @@
 language: csharp
 solution: test.sln
-install:
+before_script:
   - nuget restore test.sln
