@@ -1,9 +1,6 @@
 language: csharp
 solution: test.sln
-
-matrix:
-  include:
-    - dotnet: 2.1.502
-      mono: none
-      script:
-       - dotnet build test
+install:
+  - nuget restore AbiokaApi.sln
+script:
+  - xbuild /p:Configuration=Release test.sln /p:TargetFrameworkVersion="v4.6"
