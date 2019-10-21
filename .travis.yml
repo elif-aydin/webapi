@@ -1,4 +1,7 @@
 language: csharp
-solution: test.sln
-before_script:
-  - nuget restore test.sln
+mono: none
+dotnet: 1.0.1
+install:
+- dotnet restore
+script:
+- dotnet build
