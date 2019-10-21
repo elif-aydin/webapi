@@ -1,6 +1,2 @@
 language: csharp
-solution: test.sln
-mono: none
-dotnet: 2.1.502
-script:
- - dotnet restore
+solution: "./test.sln"
